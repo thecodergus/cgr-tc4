@@ -132,7 +132,7 @@ void setupRC() {
   // glEnable(GL_CULL_FACE);
 
   // Enable lighting
-  glEnable(GL_LIGHTING);
+  // glEnable(GL_LIGHTING);
 
   // Setup and enable light 0
   glLightModelfv(GL_LIGHT_MODEL_AMBIENT, whiteLight);
