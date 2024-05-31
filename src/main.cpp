@@ -92,13 +92,13 @@ void drawScene() {
 
 int main(int argc, char** argv) {
   glGenTextures(1, &textureID);
-  if (!object.loadOBJ("../files/cube.obj")) return 0;
-  if (!object.loadMTL("../files/cube.mtl")) return 0;
+  if (!object.loadOBJ("../files/livro.obj")) return 0;
+  if (!object.loadMTL("../files/livro.mtl")) return 0;
   glutInit(&argc, argv);
   glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
   glutInitWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
   glutCreateWindow("OBJ viewer");
-  loadTexture("../files/cube.png", textureID);
+  loadTexture("../files/livro.jpg", textureID);
   glutReshapeFunc(resize);
   glutKeyboardFunc(normalKeyPressed);
   glutSpecialFunc(specialKeyPressed);
