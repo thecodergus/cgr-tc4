@@ -12,11 +12,12 @@ fi
 NOME_PROJETO="main" # Nome do projeto
 
 # Configurações
+export CXX=g++ # Escolhendo o compilador
 export CC=gcc # Escolhendo o compilador
 export CMAKE_PREFIX_PATH="/opt/vcpkg"
 export ninja=./ninja
 
-PASTA="build"
+PASTA="build-$CXX"
 
 # Verificando se a pasta existe
 if [ -d "$PASTA" ]; then
