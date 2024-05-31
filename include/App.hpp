@@ -1,22 +1,22 @@
 #ifndef _APP_H_
 #define _APP_H_
 
-#include "Utils.hpp"
-#include "Camera.hpp"
 #include <iostream>
 #include <sstream>
-#include <iostream>
 
-#define WINDOW_HEIGHT 640
-#define WINDOW_WIDTH 480
+#include "Camera.hpp"
+#include "Utils.hpp"
+
+#define WINDOW_HEIGHT 1920
+#define WINDOW_WIDTH 1080
 
 class App {
-	public:
-		App();
-		void setup();
+ public:
+  App();
+  void setup();
 
-	private:
-		Camera camera;
+ private:
+  Camera camera;
 };
 
 extern int height;
